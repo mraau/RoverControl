@@ -20,12 +20,13 @@
 
 #include <Wire.h>         // libraries needed to use zumo functions​
 #include <Zumo32U4.h>​
-Zumo32U4Motors motors;    // instanciate the motors
+Zumo32U4Motors motors;    // instantiate the motors
 
 struct RoverControl{
   char command;
   int speed;
   int time;
+  int distance;
 
   int getSpeed(){
     return speed;
